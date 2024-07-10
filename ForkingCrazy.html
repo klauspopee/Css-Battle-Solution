@@ -1,0 +1,69 @@
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<style>
+  body {
+    background-color:#6592CF;
+    margin:0;
+  }
+  div:first-child {
+    width:20px;
+    height:100px;
+    background-color:#060F55;
+    position:absolute;
+    bottom:0;
+    left:190px
+  }
+  div:nth-child(2) {
+    width:140px;
+    height:140px;
+    background-color:#060F55;
+    position:absolute;
+    bottom:50px;
+    left:130px;
+    border-radius: 0 0 70% 70%
+  }
+  div:nth-child(n+3) {
+    width:20px;
+    height:100px;
+    position:absolute;
+    background-color:yellow;
+    bottom:150px;
+    left:130px;
+  }
+  div:nth-child(odd):not(div:nth-child(1)) {
+    background-color:#060F55;
+    border-radius:10px 10px 0 0;
+    z-index:10;
+  }
+  div:nth-child(even):not(div:nth-child(2)) {
+    background-color:#6592CF;
+    border-radius:0 0 10px 10px;
+    z-index:10;
+    bottom:140px
+  }
+  div:nth-child(4) {
+    left:150px;
+  } 
+  div:nth-child(5) {
+    left:170px;
+  }
+  div:nth-child(6) {
+    left:190px;
+  }
+  div:nth-child(7) {
+    left:210px;
+  }
+  div:nth-child(8) {
+    left:230px;
+  }
+  div:nth-child(9) {
+    left:250px;
+  }
+</style>
